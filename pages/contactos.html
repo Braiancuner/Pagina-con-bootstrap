@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <script src="js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.bundle.js"></script>
         <link rel="icon" href="images/favicon.ico">
-    <title>Contactos</title>
-</head>
-<body>
-    
-    <header>
+        <title>Contactos</title>
+    </head>
 
+<body class="fondo" background="../images/fondo de carta 2.png">
+
+    <header>
+        <h3 class="contactos">Contactos</h3>
     </header>
     <nav>
         <img src="../images/favicon-32x32.png" alt="logo">
@@ -22,13 +25,13 @@
             <li class="nav__pestañas"> <a href="../index.html">Inicio</a> </li>
 
             <li class="nav__pestañas nav__pestañas--active">
-                <a href="carta.html">Carta</a>
+                <a href="Carta.html">Carta</a>
             </li>
             <li class="nav__pestañas">
-                <a href="referencias.html">Referencias</a>
+                <a href="Referencias.html">Referencias</a>
             </li>
             <li class="nav__pestañas">
-                <a href="ubicación.html">Ubicación</a>
+                <a href="Ubicacion.html">Ubicación</a>
             </li>
             <li class="nav__pestañas">
                 <a href="contactos.html">Contactos</a>
@@ -36,11 +39,40 @@
 
         </ul>
     </nav>
-    <main>
+    <main class="container">
+        <div class="row">
+          
+            <div class="col-md-4 col-sm-4 col-lg-4 mb-3">
+                <form action="">
+                    <div>
+                        <label for="exampleFormControlInput1" class="form-label">Nombre </label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Esteban">
+                        <label for="exampleFormControlInput2" class="form-label">Apellido </label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2"
+                            placeholder="Quito">
+                        <label for="exampleFormControlInput3" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput3"
+                            placeholder="Estebanquito@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea4" class="form-label">Dejanos tu opinion</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-warning">Enviar</button>
+                    </div>
+            </div>
+
+        </div>
+
+        </form>
 
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

@@ -12,3 +12,15 @@ body {
     font-family: 'Mochiy Pop P One', sans-serif;
    
 }
+/*FOOTER*/
+.creditos{
+    grid-area: creditos;
+    background-color: orange;
+    color: rgb(102, 22, 102);
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  
+}

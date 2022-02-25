@@ -12,6 +12,12 @@ body {
     font-family: 'Mochiy Pop P One', sans-serif;
    
 }
+header{
+    grid-area: header;
+      background-color: rgb(255, 165, 0);
+      color: purple;
+      text-align: center;}
+  
 /*FOOTER*/
 .creditos{
     grid-area: creditos;

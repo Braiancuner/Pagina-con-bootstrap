@@ -17,9 +17,10 @@ header{
       background-color: rgb(255, 165, 0);
       color: purple;
       text-align: center;}
-nav{
+.nav__dis{
         grid-area: nav;
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
     background-color:orange;
     position: sticky;

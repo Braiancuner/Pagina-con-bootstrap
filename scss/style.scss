@@ -1,45 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
-@import "_carta";
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
-    
-}
-body {
-    font-family: 'Mochiy Pop P One', sans-serif;
-   
-}
-header{
-    grid-area: header;
-      background-color: rgb(255, 165, 0);
-      color: purple;
-      text-align: center;}
-
-.nav{
-
-        display: flex;
-        justify-content:flex-end ;
-        align-items: flex-end;
-    background-color:orange;
-    width: 100%;
-
-    top: 0%;
-
-    }
-
+@import "_variables";
+@import "_generales";
+@import "_menu";
+@import "_header";
+@import "footer";
 /*carta*/
-
+.productos{
+    color: blueviolet;
+    }
+    .productos__frutas{
+        grid-area: frutas;
+        color: $violeta;
+        margin-left: 30px;
+        
+    }
+    .productos__frutasLista{
+            margin-left: 30px;
+            list-style:none;
+            color: rgb(162, 0, 255);
+            text-align: center;
+            font-size: 40px;
+        }
+    
+    .sugerencias{
+        grid-area: sugerencias;
+        color: $violeta;}
+    .sugerencias__lista{
+            margin-left: 30px;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(172, 16, 172);
+            .sugerencias__nombres{
+                text-decoration: underline ;
+            color: chartreuse;
+            font-size: 30px;
+            ;
+            }
+            .sugerencias__diferentes{
+                list-style: none;
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+    
+    
+    
+    .especiales{
+        grid-area: especiales;
+        display: flex;
+        color: $violeta;
+        margin-left: 30px;}
+        .especiales__lista{
+    
+            margin-left: 30px;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(153, 0, 255);
+            align-self: end;
+            .especiales__nombres{
+                color: red;
+            text-decoration: underline;
+            font-size: 30px;
+            }
+        .especiales__diferentes{
+            list-style: none;
+            text-align: center;
+            font-size: 25px;
+        }
+        }
+    
+    /*transformaciones*/
+    .img-thumbnail:hover{
+        cursor: pointer;
+        
+        transition:all .25s ease-in-out;
+    }
+    .img-thumbnail1:hover	{
+        cursor: pointer;
+            border-radius:50%;
+            -webkit-border-radius:50%;
+            box-shadow: 0px 0px 15px 15px #ec731e;
+            -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            }
+    .img-thumbnail2 {
+    
+        transition: height 2s ;
+    }
+    
+    .img-thumbnail2:hover {
+        cursor: pointer;
+        height:500px; 
+    }
+    
 /*referencias*/
 .encuesta{
     color: purple;
     margin-left: 30px;
     margin-top: 20px;
     margin-bottom: 20px;}
-   
+
 .pregunta1{
         margin-left: 30px;
         color: black;
@@ -55,7 +115,7 @@ header{
         margin-left: 30px;
         color: black;
     }
-   .respuesta1{
+.respuesta1{
         color: green;
     }
     .respuesta{
@@ -77,17 +137,4 @@ text-align: center;
 
 .ubicacion__maps:hover{
     transform: scaleX(2);
-}
-  
-/*FOOTER*/
-.creditos{
-    grid-area: creditos;
-    background-color: orange;
-    color: rgb(102, 22, 102);
-    height: 30px;
-    text-align: center;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-  
 }

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Mochiy Pop P One', sans-serif; }
+
 .productos {
   color: blueviolet; }
 
@@ -74,20 +82,6 @@
   cursor: pointer;
   height: 500px; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Mochiy Pop P One', sans-serif; }
-
-header {
-  grid-area: header;
-  background-color: orange;
-  color: purple;
-  text-align: center; }
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -96,7 +90,12 @@ header {
   width: 100%;
   top: 0%; }
 
-/*carta*/
+header {
+  grid-area: header;
+  background-color: orange;
+  color: purple;
+  text-align: center; }
+
 /*referencias*/
 .encuesta {
   color: purple;

@@ -12,3 +12,27 @@ body {
     font-family: 'Mochiy Pop P One', sans-serif;
 
 }
+@each $var in instagram,facebook,whatsapp {
+    .redes-#{$var}{
+        background-color: orange;
+    }
+    
+}
+.icon-social{
+    font-size: 2,5rem;
+    padding:1rem ;
+}
+$redes:(
+    instagram:$violeta,
+    facebook:blue,
+    Whatsapp:green,
+);
+@each $red,$color in $redes {
+.btn--#{$red}{
+        background-color: $color;
+
+    @extend .icon-social;
+    }
+        
+    
+}

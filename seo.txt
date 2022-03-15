@@ -1,0 +1,6 @@
+Agregue metadatos en index.
+descripcion y keywors.
+    <meta name="description" content="Batidos frutales y Exprimidos">
+    <meta name="keywords" content="Licuados con frutas naturales y smoothie">
+titulo:
+<title>DIS-FRUTA</title>

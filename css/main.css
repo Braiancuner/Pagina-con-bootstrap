@@ -7,6 +7,75 @@
 body {
   font-family: 'Mochiy Pop P One', sans-serif; }
 
+.redes-instagram {
+  background-color: orange; }
+
+.redes-facebook {
+  background-color: orange; }
+
+.redes-whatsapp {
+  background-color: orange; }
+
+.icon-social, .btn--instagram, .btn--facebook, .btn--Whatsapp {
+  font-size: 2,5rem;
+  padding: 1rem; }
+
+.btn--instagram {
+  background-color: purple; }
+
+.btn--facebook {
+  background-color: blue; }
+
+.btn--Whatsapp {
+  background-color: green; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: orange;
+  width: 100%;
+  top: 0%; }
+
+header {
+  grid-area: header;
+  background-color: orange;
+  color: purple;
+  text-align: center; }
+
+.redes {
+  background-color: orange;
+  width: 50 px;
+  position: absolute;
+  top: 60px;
+  right: 20px; }
+  .redes ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+    .redes ul li {
+      transition: all 0,5s ease; }
+      .redes ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem; }
+      .redes ul li:hover {
+        transform: scale(1, 5); }
+
+.creditos {
+  grid-area: creditos;
+  background-color: orange;
+  color: #661666;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  width: 100%; }
+
+/*carta*/
 .productos {
   color: blueviolet; }
 
@@ -82,20 +151,6 @@ body {
   cursor: pointer;
   height: 500px; }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-color: orange;
-  width: 100%;
-  top: 0%; }
-
-header {
-  grid-area: header;
-  background-color: orange;
-  color: purple;
-  text-align: center; }
-
 /*referencias*/
 .encuesta {
   color: purple;
@@ -135,14 +190,3 @@ header {
 
 .ubicacion__maps:hover {
   transform: scaleX(2); }
-
-/*FOOTER*/
-.creditos {
-  grid-area: creditos;
-  background-color: orange;
-  color: #661666;
-  height: 30px;
-  text-align: center;
-  position: fixed;
-  bottom: 0%;
-  width: 100%; }
